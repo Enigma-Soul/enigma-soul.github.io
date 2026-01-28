@@ -9,5 +9,4 @@ theme = "hextra"
     lineNos = true
     style = "github"
 
-[params.search]
-enable = false
+
