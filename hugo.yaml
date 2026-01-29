@@ -10,6 +10,23 @@ markup:
         noClasses: false
         lineNos: true
         style: "github"
+    
+    goldmark:
+        renderer:
+            # 确保安全模式关闭以允许数学公式
+            unsafe: true
+        extensions:
+            passthrough:
+                delimiters:
+                    block:
+                        -   - '\['
+                            - '\]'
+                        -   - $$
+                            - $$
+                    inline:
+                        -   - '\('
+                            - '\)'
+
 
 
 # 顶边栏
@@ -74,7 +91,6 @@ menu:
             url: "https://oier.baoshuo.dev/"
             weight: 4
 params:
-    # 搜索
     search:
         enable: true
         type: flexsearch
@@ -86,3 +102,11 @@ params:
     navbar:
         displayTitle: true
         displayLogo: false
+    
+    features:
+        math:
+            enable: true
+            katex:
+                enable: true
+    
+    
