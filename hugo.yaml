@@ -1,0 +1,88 @@
+baseURL: "https://enigma-soul.github.io/"
+defaultContentLanguage: "zh-cn"
+languageCode: "zh-CN"
+title: "ES' Blog"
+theme: "hextra"
+
+# 高亮
+markup:
+    highlight:
+        noClasses: false
+        lineNos: true
+        style: "github"
+
+
+# 顶边栏
+menu:
+    main:
+        -   identifier: social
+            weight: 1
+            name: Social
+        
+        -   identifier: Github
+            name: Github ↗
+            url: https://github.com/Enigma-Soul
+            parent: social
+        
+        -   identifier: Luogu
+            name: Luogu ↗
+            url: https://www.luogu.com.cn/user/1326504
+            parent: social
+        
+        
+        
+        -   name: "OI Blog"
+            pageRef: "/oi-blog"
+            weight: 2
+        
+        
+        -   name: "搜索"
+            weight: 3
+            params:
+                type: "search"
+        
+        
+        
+        -   name: "GitHub"
+            weight: 4
+            url: "https://github.com/Enigma-Soul"
+            params:
+                icon: "github"
+    
+    
+    
+    sidebar:
+        -   name: 友情连接
+            params:
+                type: separator
+            weight: 1
+        
+        -   name: "洛谷"
+            pageRef: "https://www.luogu.com.cn/"
+            weight: 2
+        
+        -   name: "OI Wiki"
+            url: "https://oi-wiki.org/"
+            weight: 3
+        
+        -   name: "Github"
+            url: "https://github.com/"
+            weight: 4
+        
+        
+        -   name: "OIer DB"
+            url: "https://oier.baoshuo.dev/"
+            weight: 4
+params:
+    # 搜索
+    search:
+        enable: true
+        type: flexsearch
+        
+        flexsearch:
+            # 索引页面方式: content | summary | heading | title
+            index: content
+    
+    navbar:
+        displayTitle: true
+        displayLogo: false
