@@ -8,9 +8,9 @@ theme: "hextra"
 markup:
     highlight:
         noClasses: false
-        lineNos: true
+        lineNos: false
         style: "github"
-    
+
     goldmark:
         renderer:
             # 确保安全模式关闭以允许数学公式
@@ -18,14 +18,9 @@ markup:
         extensions:
             passthrough:
                 delimiters:
-                    block:
-                        -   - '\['
-                            - '\]'
-                        -   - $$
-                            - $$
-                    inline:
-                        -   - '\('
-                            - '\)'
+                    block: [['\[', '\]'], ['$$', '$$']]
+                    inline: [['\(', '\)']]
+                enable: true
 
 
 
@@ -94,19 +89,18 @@ params:
     search:
         enable: true
         type: flexsearch
-        
+
         flexsearch:
             # 索引页面方式: content | summary | heading | title
             index: content
-    
+
     navbar:
         displayTitle: true
         displayLogo: false
-    
-    features:
-        math:
-            enable: true
-            katex:
-                enable: true
+
+    # 数学渲染配置（默认使用KaTeX）
+    # 也可以设置为 mathjax 来使用MathJax
+    # math:
+    #     engine: katex
     
     
