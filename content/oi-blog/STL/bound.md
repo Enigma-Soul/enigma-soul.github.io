@@ -17,10 +17,9 @@ upper_bound(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __val)
 lower_bound返回**第一个大于等于**的迭代器 upper_bound返回**第一个大于**的迭代器
 
 ### 复杂度
-在一般的数组里，这两个函数的时间复杂度均为 \(𝑂(logn)\)<br>
-但在 `set` 等关联式容器中，直接调用 `lower_bound(s.begin(),s.end(),val)` 的时间复杂度是 $O(\log n)$的．
-
-`set` 等关联式容器中已经封装了 `lower_bound` 等函数（像 `s.lower_bound(val)` 这样），这样调用的时间复杂度是 $𝑂(log⁡ n)$的．
+在一般的数组里，这两个函数的时间复杂度均为 $O(\log n)$<br>
+但在 `set` 等关联式容器中，直接调用 `lower_bound(s.begin(),s.end(),val)` 的时间复杂度是 $O(\log n)$ 的。
+`set` 等关联式容器中已经封装了 `lower_bound` 等函数（像 `s.lower_bound(val)` 这样），这样调用的时间复杂度是 $O(\log n)$ 的。
 
 ### 返回值
 `*::iterator` 可使用*得到值<br>
