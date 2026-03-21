@@ -1,5 +1,6 @@
 ---
 title: "哈希表"
+comments: true
 date: '2026-03-20T20:34:00+08:00'
 draft: false
 categories: [OI]

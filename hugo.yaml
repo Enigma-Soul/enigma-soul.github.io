@@ -103,4 +103,17 @@ params:
     # math:
     #     engine: katex
     
+    comments:
+        enable: true
+        type: giscus
+        giscus:
+            repo: Enigma-Soul/enigma-soul.github.io
+            repoId: R_kgDORARKqA
+            category: 评论
+            categoryId: DIC_kwDORARKqM4C451a
+            mapping: pathname
+            reactionsEnabled: 1
+            emitMetadata: 0
+            inputPosition: top
+            lang: zh-CN
     

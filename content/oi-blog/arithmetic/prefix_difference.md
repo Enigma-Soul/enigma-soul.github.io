@@ -1,5 +1,6 @@
 ---
 title: "前缀和 差分"
+comments: true
 date: '2026-03-20T19:00:22+08:00'
 draft: false
 categories: [OI]
