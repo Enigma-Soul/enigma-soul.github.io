@@ -25,6 +25,8 @@ int main() {
 }
 ```
 
+### 工具快捷栏
+[图片混淆](https://enigma-soul.github.io/Enigma-Soul/tools/cipher/)
 
 
 {{< tabs >}}
@@ -36,11 +38,3 @@ int main() {
   {{< /tab >}}
 
 {{< /tabs >}}
-
-### CHANGELOG
-{{< details title="CHANGELOG" closed="true" >}}
-- 0.0.2
-  修改主页面逻辑 增加barrier 评论系统
-- 0.0.1
-  增加 前缀和 差分 Hash Table
-{{< /details >}}
