@@ -1,16 +1,18 @@
 ---
-title: "必知数学"
+title: "数学"
 comments: true
-date: '2026-04-11T12:06:00+08:00'
+date: '2026-05-24T15:45:30+08:00'
 draft: false
 categories: []
 tags: []
-description: "必知的数学知识 (按照毕导的话来说 这都是小学二年级的"
+description: ""
 type: docs
 ---
 
+## 必知数学
+必知的数学知识 (按照毕导的话来说 这都是小学二年级的
 ### 模运算
-这个非常重要 不少题都结果取余<br>
+这个非常重要 不少题都需要对结果取余<br>
 $$
 \begin{gathered}
     \text{如果 } a \equiv b \pmod{n} \text{ 且 } c \equiv d \pmod{n}\text{，那么} \\
@@ -32,20 +34,20 @@ $$
 **取余法**<br>
 `return x % 2;`<br>
 **`AND` 操作**<br>
-本质上是对`1`进行`    `操作
-`return x      1;`<br>
+本质上是对`1`进行`AND`操作
+`return x & 1;`<br>
 
 不难发现位运算比取余法要快得多
 
 ### 阶乘
-对于一个正整数 $n$ 都有 $n! = n*n(n-2)*(n-2)*...*1$<br>
+对于一个正整数 $n$ 都有 $n! = n*(n-1)*(n-2)*...*1$<br>
 对于需要大量使用`不同数的阶乘`时 会产生大量的重复计算 这时 可以建立数组来储存
 
 ### 前 $n$ 个自然数之和
 #### 循环/递归法
 这种方法太慢了 但逻辑很简单 时间复杂度$O(n)$ 非常慢
 ``` cpp
-int sum(int nx){
+int sum(int n){
     int ans = 0;
     for(int i = 1;i<=n;i++){
         ans += i;
@@ -69,7 +71,7 @@ $$
 $$
 \begin{gathered}
     \text{如果 } a + b = n\text{ 则:}\\
-    x^{n} \equiv x^{a} + x^{b}\\
+    x^{n} = x^{a} \cdot x^{b}\\
     \text{依此原理 可将正整数 }n\text{拆分成} 2^a + 2^b + 2^c +...+1
 \end{gathered}
 $$

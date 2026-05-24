@@ -8,4 +8,4 @@ description: ""
 type: docs
 ---
 
-OI 主题
+信息学奥林匹克
