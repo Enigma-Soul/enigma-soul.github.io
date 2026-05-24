@@ -10,12 +10,12 @@ type: docs
 ---
 
 
-### 注册
+### OpenRouter 注册
 ~~这个我就不说了 一般不是三岁都会~~
 
 邮箱不建议使用 qq 邮箱 (不知道没试过)
 
-### 账单及地址
+### 配置账单及地址
 * 生成地址
   去类似 [US Address Gen](https://usaddressgen.com/) 的网站生成一张随机地址
 
@@ -45,3 +45,4 @@ type: docs
    ![HTTPS 配置](img/https-proxy_config.png)
    这里的 `"HTTPS_PROXY": "http://127.0.0.1:7890"` 因人而异 反正我的猫是这样
 
+**代理节点一定要去 [IP Pure](https://ippure.com/) 测一遍 纯净度低的风险大**
