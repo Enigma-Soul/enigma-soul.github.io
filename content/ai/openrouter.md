@@ -30,7 +30,7 @@ type: docs
   4. 返回 [openrouter.ai](https://openrouter.ai/)
 
 
-注: 若地址为中国地址(包括香港 台湾)会提示
+注: 若地址为中国地址（包括香港 台湾）会提示
 > "Your billing address is in a region that does not have access to models from OpenAI, Anthropic, and Google. All other models remain available."
 
 ### Claude Code 配置
@@ -41,7 +41,7 @@ type: docs
 这里以 `cc-switch` 为例
 1. 打开 OpenRouter 的配置详情页
    ![配置详情页](img/openrouter_config.png)
-2. 在 `配置JSON` 中的 `env`中添加 `"HTTPS_PROXY": "http://127.0.0.1:7890"`
+2. 在 `配置 JSON` 中的 `env` 中添加 `"HTTPS_PROXY": "http://127.0.0.1:7890"`
    ![HTTPS 配置](img/https-proxy_config.png)
    这里的 `"HTTPS_PROXY": "http://127.0.0.1:7890"` 因人而异 反正我的猫是这样
 

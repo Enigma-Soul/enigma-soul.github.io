@@ -11,11 +11,11 @@ type: docs
 
 [![OI](https://readme-typing-svg.demolab.com?font=Fira+Code&size=115&duration=1300&pause=800&color=1E8AF7&center=true&vCenter=true&width=1000&height=300&lines=O+I;Olympiad;Informatics;%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B)](https://enigma-soul.github.io/)
 
-河北省的一个OIer
+河北省的一个 OIer
 
 Email: Enigma_Soul@outlook.com
 
-```C++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
