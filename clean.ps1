@@ -20,12 +20,11 @@ foreach ($t in $targets) {
     }
 }
 
-# 清除 content/ 下的空文件夹（排除 _index.md 所在的目录）
-Get-ChildItem $root\content -Directory -Recurse | Where-Object {
-    $_.GetFiles().Count -eq 0 -and $_.GetDirectories().Count -eq 0
-} | ForEach-Object {
-    Remove-Item $_.FullName -Force
-    Write-Host "已删除空文件夹: $($_.FullName)" -ForegroundColor Yellow
+# 清除 content/ 下的空文件夹
+$emptyDirs = Get-ChildItem -Path "$root\content" -Directory -Recurse | Where-Object { $_.GetFiles().Count -eq 0 -and $_.GetDirectories().Count -eq 0 }
+foreach ($d in $emptyDirs) {
+    Remove-Item $d.FullName -Force
+    Write-Host "已删除空文件夹: $($d.FullName)" -ForegroundColor Yellow
 }
 
 Write-Host "`n清理完成" -ForegroundColor Cyan
