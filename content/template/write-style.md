@@ -1,6 +1,6 @@
 ---
 title: "Blog 规范"
-comments: true
+comments: false
 date: '2026-05-30T18:28:14+08:00'
 draft: false
 categories: []
