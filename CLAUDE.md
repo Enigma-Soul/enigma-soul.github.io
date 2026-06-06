@@ -11,7 +11,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 ./hugo.exe server -D          # 本地开发服务器（含草稿）
 ./hugo.exe --minify           # 生产构建
-./hugo.exe new content oi-blog/新文件.md   # 从 archetype 创建新页面
+./hugo.exe new content oi-blog/新文件.md                       # 默认 archetype
+./hugo.exe new content oi-blog/新算法.md --kind algorithm      # 算法笔记模板
+./hugo.exe new content oi-blog/新STL.md --kind stl             # STL 笔记模板
 ```
 
 推送 `main` 分支会自动触发 GitHub Actions 部署到 `gh-pages` 分支。**默认推送到 `develop` 分支，不要直接推 `main`。**
@@ -35,13 +37,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Front Matter 规范
 
-所有页面从 `archetypes/default.md` 生成，标准字段：
+Archetype 文件在 `archetypes/` 下：
+
+- `default.md` — 通用页面，`date` 由 Hugo 自动生成
+- `algorithm.md` — 算法笔记（`--kind algorithm`）
+- `stl.md` — STL 笔记（`--kind stl`）
+
+标准 front matter 字段：
 
 ```yaml
 ---
 title: "页面标题"
 comments: true          # 内容页 true，_index.md 和首页 false
-date: '2026-01-01T00:00:00+08:00'
+date: '{{ .Date }}'     # Hugo 自动填入当前时间
 draft: false
 categories: [OI]        # OI 相关内容填 [OI]，其余填 []
 tags: []                # 如 [STL]、[hash]、[prefix,difference]
@@ -52,7 +60,7 @@ type: docs
 
 ## 写作规范
 
-**必须遵循** `content/oi-blog/template/write-style.md` 中的规范，核心要点：
+**必须遵循** `content/template/write-style.md` 中的规范，核心要点：
 
 - **标题层级**: 从 `##` 开始（一级标题由 Hugo 自动生成），依次 `##` → `###` → `####`
 - **中英文间距**: 中文与英文之间必须有一个半角空格；中文与数字之间风格统一即可
@@ -65,10 +73,10 @@ type: docs
 
 ## 内容模板
 
-`content/oi-blog/template/` 下有两个笔记结构模板，新建 OI 笔记时参照对应模板：
+`content/template/` 下有两个笔记结构模板，已同步到 `archetypes/` 中：
 
-- **`algorithm_template.md`** — 算法笔记：前置知识 → 基本概念 → 原理推导 → 复杂度分析 → 适用场景 → 代码模板 → 关键点 → 例题 → 扩展
-- **`stl_template.md`** — STL 笔记：定位 → 定义与声明 → 复杂度 → 常用接口 → 代码片段 → 注意事项 → 同类对比 → 例题 → 扩展
+- **`algorithm_template.md`** → `archetypes/algorithm.md` — 算法笔记：前置知识 → 基本概念 → 原理推导 → 复杂度分析 → 适用场景 → 代码模板 → 关键点 → 例题 → 扩展
+- **`stl_template.md`** → `archetypes/stl.md` — STL 笔记：定位 → 定义与声明 → 复杂度 → 常用接口 → 代码片段 → 注意事项 → 同类对比 → 例题 → 扩展
 
 两者均含 💡 标记的思考点，是笔记重点应填写的部分。
 
