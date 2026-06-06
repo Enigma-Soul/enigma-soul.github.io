@@ -5,7 +5,7 @@ date: '2026-05-24T15:43:51+08:00'
 draft: false
 categories: []
 tags: []
-description: "AI 编程 Vibe Coding等相关"
+description: "AI 编程 Vibe Coding 等相关"
 type: docs
 ---
 

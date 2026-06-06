@@ -5,17 +5,17 @@ date: '2026-03-01T17:50:01+08:00'
 draft: false
 categories: []
 tags: []
-description: "STL中Lower_bound/Upper_bound"
+description: "STL 中 Lower_bound/Upper_bound"
 type: docs
 ---
 
-### STL定义
-``` c++
+### STL 定义
+```cpp
 lower_bound(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __val);
 upper_bound(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __val);
 ```
 两个函数中 均返回一个迭代器 唯一区别便是<br>
-lower_bound返回**第一个大于等于**的迭代器 upper_bound返回**第一个大于**的迭代器
+lower_bound 返回**第一个大于等于**的迭代器 upper_bound 返回**第一个大于**的迭代器
 
 ### 复杂度
 在一般的数组里，这两个函数的时间复杂度均为 $O(\log n)$<br>
@@ -24,20 +24,20 @@ lower_bound返回**第一个大于等于**的迭代器 upper_bound返回**第一
 
 ### 返回值
 `*::iterator` 可使用*得到值<br>
-对于`vector`可使用`result - v.begin()`来得到其在向量中的索引
+对于 `vector` 可使用 `result - v.begin()` 来得到其在向量中的索引
 ### 常用用法
 事先定义:
-``` c++
+```cpp
 vector<int> arr = {1,2,3,4,5};
 ```
 查找数组中是否含有某个数
-``` c++
+```cpp
 int x = 3;
 auto result = lower_bound(arr.begin(),arr.end(),x);
 return result!=arr.end() && *result == x;
 ```
 查找数组里某个数的个数
-``` c++
+```cpp
 int x = 3;
 auto lower = lower_bound(arr.begin(),arr.end(),x);
 auto upper = upper_bound(arr.begin(),arr.end(),x);
