@@ -9,11 +9,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 常用命令
 
 ```bash
-./hugo.exe server -D          # 本地开发服务器（含草稿）
-./hugo.exe --minify           # 生产构建
-./hugo.exe new content oi-blog/新文件.md                       # 默认 archetype
-./hugo.exe new content oi-blog/新算法.md --kind algorithm      # 算法笔记模板
-./hugo.exe new content oi-blog/新STL.md --kind stl             # STL 笔记模板
+hugo.exe server -D          # 本地开发服务器（含草稿）
+hugo.exe --minify           # 生产构建
+hugo.exe new content oi-blog/新文件/_index.md                       # 默认 archetype
+hugo.exe new content oi-blog/新算法/_index.md --kind algorithm      # 算法笔记模板
+hugo.exe new content oi-blog/新STL/_index.md --kind stl             # STL 笔记模板
 ```
 
 推送 `main` 分支会自动触发 GitHub Actions 部署到 `gh-pages` 分支。**默认推送到 `develop` 分支，不要直接推 `main`。**
@@ -60,7 +60,7 @@ type: docs
 
 ## 写作规范
 
-**必须遵循** `content/template/write-style.md` 中的规范，核心要点：
+**必须遵循** `write-style.md` 中的规范，核心要点：
 
 - **标题层级**: 从 `##` 开始（一级标题由 Hugo 自动生成），依次 `##` → `###` → `####`
 - **中英文间距**: 中文与英文之间必须有一个半角空格；中文与数字之间风格统一即可
@@ -70,10 +70,12 @@ type: docs
 - **段落**: 段间一个空行，段首不缩进，段落控制在五行以内
 - **文件名**: 不得含空格，多词用 `-` 连接
 - **行内代码**: 用单反引号 `` `code` `` 包裹，不用三反引号 `` ```code``` ``；行内代码与中文之间加空格
+- **算法专有短语**: 任何算法/数据结构中的专有名词、术语、关键短语必须用反引号包裹，如 `前缀和`、`差分`、`容斥原理`、`红黑树`、`哈希冲突`、`负载因子`、`双射` 等
+- **禁止 archetype 提示残留**: `content/` 下的正式内容不得出现 archetype 模板中的括号提示（如 `（提示内容）`、`（按需）`、`（按需保留）`）和 `> 💡` / `> 用法模板` 等 blockquote 提示。这些仅存在于 `archetypes/` 模板中，正式笔记中应替换为实际内容
 
 ## 内容模板
 
-`content/template/` 下有两个笔记结构模板，已同步到 `archetypes/` 中：
+`archetypes/` 下有两个笔记结构模板：
 
 - **`algorithm_template.md`** → `archetypes/algorithm.md` — 算法笔记：前置知识 → 基本概念 → 原理推导 → 复杂度分析 → 适用场景 → 代码模板 → 关键点 → 例题 → 扩展
 - **`stl_template.md`** → `archetypes/stl.md` — STL 笔记：定位 → 定义与声明 → 复杂度 → 常用接口 → 代码片段 → 注意事项 → 同类对比 → 例题 → 扩展
@@ -82,8 +84,7 @@ type: docs
 
 ## 注意事项
 
-- `hugo.exe` 是本地 Windows 用的 Hugo 二进制文件（已在 `.gitignore` 中）
 - `.cph-ng/` 目录是 VS Code Competitive Programming Helper 扩展的数据，非项目内容
 - 主题最低 Hugo 版本要求：0.146.0
 - 代码块语言标记用 `cpp`（不用 `c++`），纯文本用 `text`
-- 编辑或创建内容后，用 `./hugo.exe server -D` 预览确认渲染正常
+- 编辑或创建内容后，用 `hugo.exe server -D` 预览确认渲染正常
