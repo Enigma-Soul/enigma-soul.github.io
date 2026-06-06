@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ES' Blog – Difference</title><link>https://enigma-soul.github.io/tags/difference/</link><description>Recent content in Difference on ES' Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 20 Mar 2026 19:00:22 +0800</lastBuildDate><atom:link href="https://enigma-soul.github.io/tags/difference/index.xml" rel="self" type="application/rss+xml"/><item><title>前缀和 差分</title><link>https://enigma-soul.github.io/oi-blog/arithmetic/prefix_difference/</link><pubDate>Fri, 20 Mar 2026 19:00:22 +0800</pubDate><guid>https://enigma-soul.github.io/oi-blog/arithmetic/prefix_difference/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ES' Blog – Difference</title><link>https://enigma-soul.github.io/tags/difference/</link><description>Recent content in Difference on ES' Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 20 Mar 2026 19:00:22 +0800</lastBuildDate><atom:link href="https://enigma-soul.github.io/tags/difference/index.xml" rel="self" type="application/rss+xml"/><item><title>前缀和 差分</title><link>https://enigma-soul.github.io/oi-blog/algorithm/prefix_difference/</link><pubDate>Fri, 20 Mar 2026 19:00:22 +0800</pubDate><guid>https://enigma-soul.github.io/oi-blog/algorithm/prefix_difference/</guid><description>
 &lt;h2&gt;前缀和 差分&lt;span class="hx:absolute hx:-mt-20" id="前缀和-差分"&gt;&lt;/span&gt;
 &lt;a href="#%e5%89%8d%e7%bc%80%e5%92%8c-%e5%b7%ae%e5%88%86" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;一、基本概念&lt;span class="hx:absolute hx:-mt-20" id="一基本概念"&gt;&lt;/span&gt;
 &lt;a href="#%e4%b8%80%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
@@ -6,13 +6,14 @@
 前缀和:一个数组内 前面所有元素的和&lt;br&gt;
 差分: 一个数组内 此元素与前一个元素的差&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;分 一位前缀和 和 多维前缀和&lt;/p&gt;
+&lt;p&gt;分 一维前缀和 和 多维前缀和&lt;/p&gt;
 &lt;p&gt;容斥原理 使其无限制(就是麻烦)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;用途&lt;/strong&gt;：
 区间内 速查 速增减&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：
-&lt;a href="https://oi-wiki.org/math/combinatorics/inclusion-exclusion-principle/"target="_blank" rel="noopener"&gt;容斥原理&lt;/a&gt;&lt;/li&gt;
+&lt;a
+href="https://oi-wiki.org/math/combinatorics/inclusion-exclusion-principle/"target="_blank" rel="noopener"&gt;容斥原理&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;二、复杂度分析&lt;span class="hx:absolute hx:-mt-20" id="二复杂度分析"&gt;&lt;/span&gt;
 &lt;a href="#%e4%ba%8c%e5%a4%8d%e6%9d%82%e5%ba%a6%e5%88%86%e6%9e%90" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
@@ -42,7 +43,7 @@
 &lt;h3&gt;三、适用场景&lt;span class="hx:absolute hx:-mt-20" id="三适用场景"&gt;&lt;/span&gt;
 &lt;a href="#%e4%b8%89%e9%80%82%e7%94%a8%e5%9c%ba%e6%99%af" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;适合的问题类型：不同区间 同时增减&lt;/li&gt;
-&lt;li&gt;数据范围：和必须低于__int128 否则就要高精度了&lt;/li&gt;
+&lt;li&gt;数据范围：和必须低于 __int128 否则就要高精度了&lt;/li&gt;
 &lt;li&gt;限制条件：内存必须连续&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;四、代码模板&lt;span class="hx:absolute hx:-mt-20" id="四代码模板"&gt;&lt;/span&gt;
@@ -318,7 +319,8 @@ data-copied-label="已复制！"
 &lt;/ol&gt;
 &lt;p&gt;显而易见非常快 不是吗?&lt;/p&gt;
 &lt;h3&gt;六、例题&lt;span class="hx:absolute hx:-mt-20" id="六例题"&gt;&lt;/span&gt;
-&lt;a href="#%e5%85%ad%e4%be%8b%e9%a2%98" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href="https://www.luogu.com.cn/problem/P8218"target="_blank" rel="noopener"&gt;Luogu P8218&lt;/a&gt;&lt;/p&gt;
+&lt;a href="#%e5%85%ad%e4%be%8b%e9%a2%98" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a
+href="https://www.luogu.com.cn/problem/P8218"target="_blank" rel="noopener"&gt;Luogu P8218&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;例题1&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;题意：一维前缀和&lt;/li&gt;
