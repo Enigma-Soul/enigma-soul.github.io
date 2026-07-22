@@ -8,4 +8,6 @@ description: ""
 type: docs
 ---
 
-信息学奥林匹克相关内容.
+> Translated from Chinese by an LLM.
+
+Content related to the Informatics Olympiad.

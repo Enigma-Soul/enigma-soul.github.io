@@ -9,4 +9,4 @@ description: "C++ 自带 STL 解释"
 type: docs
 ---
 
-这是 C++ STL 的一些使用心得
+C++ STL 容器与算法库的使用心得与注意事项.

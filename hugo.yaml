@@ -3,6 +3,16 @@ defaultContentLanguage: "zh-cn"
 locale: "zh-CN"
 title: "ES' Blog"
 theme: "hextra"
+defaultContentLanguageInSubdir: false
+
+# 多语言
+languages:
+    zh-cn:
+        label: 中文
+        weight: 1
+    en-us:
+        label: English
+        weight: 2
 
 # 高亮
 markup:
@@ -48,7 +58,7 @@ menu:
             weight: 2
         
         
-        -   name: "搜索"
+        -   name: "Search"
             weight: 3
             params:
                 type: "search"
@@ -64,13 +74,13 @@ menu:
     
     
     sidebar:
-        -   name: 友情链接
+        -   name: Link
             params:
                 type: separator
             weight: 1
         
-        -   name: "洛谷"
-            pageRef: "https://www.luogu.com.cn/"
+        -   name: "Luogu"
+            url: "https://www.luogu.com.cn/"
             weight: 2
         
         -   name: "OI Wiki"
@@ -84,7 +94,11 @@ menu:
         
         -   name: "OIer DB"
             url: "https://oier.baoshuo.dev/"
-            weight: 4
+            weight: 5
+
+        -   name: "ENA's Page"
+            url: "https://enashpinal.pages.dev/"
+            weight: 6
 params:
     search:
         enable: true

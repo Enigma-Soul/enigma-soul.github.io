@@ -9,5 +9,4 @@ description: "AI 编程 Vibe Coding 等相关"
 type: docs
 ---
 
-
-关于 AI Coding Vibe Coding Claude Code 等注意事项
+关于 AI Coding、Vibe Coding、Claude Code 等工具的使用注意事项与配置指南.

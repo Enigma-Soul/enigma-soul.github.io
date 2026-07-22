@@ -26,8 +26,8 @@ int main() {
 ```
 
 ### 工具快捷栏
-[图片混淆](https://enigma-soul.github.io/Enigma-Soul/tools/cipher/)
-
+- [图片混淆](https://enigma-soul.github.io/Enigma-Soul/tools/cipher/)
+- [字符统计](https://enigma-soul.github.io/Enigma-Soul/tools/counter/)
 
 {{< tabs >}}
   {{< tab name="微信" >}}
