@@ -1,0 +1,24 @@
+# General
+search: Search
+search_placeholder: Search docs
+edit_page: Edit this page
+last_updated: Last updated
+reading_time: Reading time
+toc: Table of contents
+
+# Navigation
+home: Home
+tags: Tags
+categories: Categories
+archive: Archive
+
+# Article
+posted_on: Posted on
+by: By
+minutes: min
+read_more: Read more
+
+# 404
+page_not_found: Page not found
+page_not_found_text: The page you are looking for does not exist
+back_to_home: Back to home

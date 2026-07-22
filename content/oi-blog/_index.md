@@ -9,4 +9,4 @@ description: "我的 OI 博客"
 type: docs
 ---
 
-
+记录 OI 学习过程中的算法、STL 与数学笔记，按主题分类整理.
