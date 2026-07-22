@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ES' Blog – AI Coding</title><link>https://enigma-soul.github.io/production_code/ai/</link><description>Recent content in AI Coding on ES' Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 24 May 2026 15:43:51 +0800</lastBuildDate><atom:link href="https://enigma-soul.github.io/production_code/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenRouter</title><link>https://enigma-soul.github.io/production_code/ai/openrouter/</link><pubDate>Sun, 24 May 2026 15:54:09 +0800</pubDate><guid>https://enigma-soul.github.io/production_code/ai/openrouter/</guid><description>
+&lt;h3&gt;OpenRouter 注册&lt;span class="hx:absolute hx:-mt-20" id="openrouter-注册"&gt;&lt;/span&gt;
+&lt;a href="#openrouter-%e6%b3%a8%e5%86%8c" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;del&gt;这个我就不说了 一般不是三岁都会&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;邮箱不建议使用 qq 邮箱 (不知道没试过)&lt;/p&gt;
+&lt;h3&gt;配置账单及地址&lt;span class="hx:absolute hx:-mt-20" id="配置账单及地址"&gt;&lt;/span&gt;
+&lt;a href="#%e9%85%8d%e7%bd%ae%e8%b4%a6%e5%8d%95%e5%8f%8a%e5%9c%b0%e5%9d%80" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;生成地址
+去类似 &lt;a
+href="https://usaddressgen.com/"target="_blank" rel="noopener"&gt;US Address Gen&lt;/a&gt; 的网站生成一张随机地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填写 Billing
+如果还没有填写直接在注册时填写地址&lt;/p&gt;
+&lt;p&gt;已经填写过 Billing 的如下操作&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;前往 &lt;a
+href="https://openrouter.ai/settings/credits"target="_blank" rel="noopener"&gt;Credits&lt;/a&gt; 打开 &lt;strong&gt;&amp;ldquo;History&amp;rdquo;&lt;/strong&gt;
+&lt;img src="../img/history_buttom.png" alt="History" loading="lazy" /&gt;&lt;/li&gt;
+&lt;li&gt;在弹出 billing.stripe.com 的页面中 选择 &lt;strong&gt;&amp;ldquo;更新信息&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;将 &lt;strong&gt;生成地址&lt;/strong&gt; 的地址填入&lt;/li&gt;
+&lt;li&gt;返回 &lt;a
+href="https://openrouter.ai/"target="_blank" rel="noopener"&gt;openrouter.ai&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注: 若地址为中国地址（包括香港 台湾）会提示&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Your billing address is in a region that does not have access to models from OpenAI, Anthropic, and Google. All other models remain available.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Claude Code 配置&lt;span class="hx:absolute hx:-mt-20" id="claude-code-配置"&gt;&lt;/span&gt;
+&lt;a href="#claude-code-%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;推荐使用 &lt;a
+href="https://github.com/farion1231/cc-switch"target="_blank" rel="noopener"&gt;cc-switch&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;env 配置&lt;span class="hx:absolute hx:-mt-20" id="env-配置"&gt;&lt;/span&gt;
+&lt;a href="#env-%e9%85%8d%e7%bd%ae" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;神秘 Claude Code 不走 Clash 代理 需要手动添加代理&lt;/p&gt;
+&lt;p&gt;这里以 &lt;code&gt;cc-switch&lt;/code&gt; 为例&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 OpenRouter 的配置详情页
+&lt;img src="../img/openrouter_config.png" alt="配置详情页" loading="lazy" /&gt;&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;配置 JSON&lt;/code&gt; 中的 &lt;code&gt;env&lt;/code&gt; 中添加 &lt;code&gt;&amp;quot;HTTPS_PROXY&amp;quot;: &amp;quot;http://127.0.0.1:7890&amp;quot;&lt;/code&gt;
+&lt;img src="../img/https-proxy_config.png" alt="HTTPS 配置" loading="lazy" /&gt;
+这里的 &lt;code&gt;&amp;quot;HTTPS_PROXY&amp;quot;: &amp;quot;http://127.0.0.1:7890&amp;quot;&lt;/code&gt; 因人而异 反正我的猫是这样&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;代理节点一定要去 &lt;a
+href="https://ippure.com/"target="_blank" rel="noopener"&gt;IP Pure&lt;/a&gt; 测一遍 纯净度低的风险大&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

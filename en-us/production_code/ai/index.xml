@@ -1,0 +1,48 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ES' Blog – AI Coding</title><link>https://enigma-soul.github.io/en-us/production_code/ai/</link><description>Recent content in AI Coding on ES' Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 24 May 2026 15:43:51 +0800</lastBuildDate><atom:link href="https://enigma-soul.github.io/en-us/production_code/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenRouter</title><link>https://enigma-soul.github.io/en-us/production_code/ai/openrouter/</link><pubDate>Sun, 24 May 2026 15:54:09 +0800</pubDate><guid>https://enigma-soul.github.io/en-us/production_code/ai/openrouter/</guid><description>
+&lt;blockquote&gt;
+&lt;p&gt;Translated from Chinese by an LLM.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;OpenRouter Registration&lt;span class="hx:absolute hx:-mt-20" id="openrouter-registration"&gt;&lt;/span&gt;
+&lt;a href="#openrouter-registration" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;del&gt;I won&amp;rsquo;t cover this - isn&amp;rsquo;t it something even a three-year-old can do?&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Using a QQ email address is not recommended (not sure, haven&amp;rsquo;t tried).&lt;/p&gt;
+&lt;h3&gt;Configuring Billing and Address&lt;span class="hx:absolute hx:-mt-20" id="configuring-billing-and-address"&gt;&lt;/span&gt;
+&lt;a href="#configuring-billing-and-address" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Generate an address
+Go to a site like &lt;a
+href="https://usaddressgen.com/"target="_blank" rel="noopener"&gt;US Address Gen&lt;/a&gt; to generate a random address.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fill in Billing
+If you haven&amp;rsquo;t filled it in yet, enter the address during registration.&lt;/p&gt;
+&lt;p&gt;If you have already filled in Billing, do the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a
+href="https://openrouter.ai/settings/credits"target="_blank" rel="noopener"&gt;Credits&lt;/a&gt; and open &lt;strong&gt;&amp;ldquo;History&amp;rdquo;&lt;/strong&gt;.
+&lt;img src="../img/history_buttom.png" alt="History" loading="lazy" /&gt;&lt;/li&gt;
+&lt;li&gt;On the billing.stripe.com page that pops up, select &lt;strong&gt;&amp;ldquo;Update information&amp;rdquo;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Fill in the address from &lt;strong&gt;Generate an address&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Return to &lt;a
+href="https://openrouter.ai/"target="_blank" rel="noopener"&gt;openrouter.ai&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: If the address is a Chinese address (including Hong Kong, Taiwan), you will see:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Your billing address is in a region that does not have access to models from OpenAI, Anthropic, and Google. All other models remain available.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Claude Code Configuration&lt;span class="hx:absolute hx:-mt-20" id="claude-code-configuration"&gt;&lt;/span&gt;
+&lt;a href="#claude-code-configuration" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;a
+href="https://github.com/farion1231/cc-switch"target="_blank" rel="noopener"&gt;cc-switch&lt;/a&gt; is recommended.&lt;/p&gt;
+&lt;h4&gt;env Configuration&lt;span class="hx:absolute hx:-mt-20" id="env-configuration"&gt;&lt;/span&gt;
+&lt;a href="#env-configuration" class="subheading-anchor" aria-label="此章节的永久链接"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;For some reason Claude Code doesn&amp;rsquo;t go through the Clash proxy - you need to add the proxy manually.&lt;/p&gt;
+&lt;p&gt;Here using &lt;code&gt;cc-switch&lt;/code&gt; as an example:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the OpenRouter configuration details page.
+&lt;img src="../img/openrouter_config.png" alt="Configuration details page" loading="lazy" /&gt;&lt;/li&gt;
+&lt;li&gt;In the &lt;code&gt;Configuration JSON&lt;/code&gt;, under &lt;code&gt;env&lt;/code&gt;, add &lt;code&gt;&amp;quot;HTTPS_PROXY&amp;quot;: &amp;quot;http://127.0.0.1:7890&amp;quot;&lt;/code&gt;.
+&lt;img src="../img/https-proxy_config.png" alt="HTTPS configuration" loading="lazy" /&gt;
+The value of &lt;code&gt;&amp;quot;HTTPS_PROXY&amp;quot;: &amp;quot;http://127.0.0.1:7890&amp;quot;&lt;/code&gt; varies by person - anyway, that&amp;rsquo;s how my cat is set up.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Be sure to test your proxy node on &lt;a
+href="https://ippure.com/"target="_blank" rel="noopener"&gt;IP Pure&lt;/a&gt; - low purity means high risk.&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
