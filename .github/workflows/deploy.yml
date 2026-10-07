@@ -26,8 +26,11 @@ jobs:
             -   name: Build
                 run: hugo --minify
             
+            # cname 必须显式传入：该 action 每次部署都会重写 gh-pages 分支，
+            # 不传则 CNAME 文件被删除，自定义域名与 HTTPS 设置随即丢失
             -   name: Deploy
                 uses: peaceiris/actions-gh-pages@v4
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
                     publish_dir: ./public
+                    cname: enigma-soul.xn--0iv.gay
